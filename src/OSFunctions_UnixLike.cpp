@@ -34,7 +34,7 @@ using namespace NWindows;
 #include "dirent.h"
 
 #include "OSFunctions_UnixLike.h"
-
+#define MAC_OS_X_VERSION_MIN_REQUIRED MAC_OS_X_VERSION_10_9
 #if __APPLE__ && (MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_9)
 int myselect(struct dirent * pDir );
 #else

@@ -191,7 +191,7 @@ private:
 	C7ZipObjectPtrArray m_InternalObjectsArray;
 
 public:
-	bool Initialize();
+	bool Initialize(wstring dll);
 	void Deinitialize();
 
 	bool GetSupportedExts(WStringArray & exts);

@@ -63,12 +63,12 @@ void C7ZipLibrary::Deinitialize()
     m_bInitialized = false;
 }
 
-bool C7ZipLibrary::Initialize()
+bool C7ZipLibrary::Initialize(wstring dll)
 {
     if (m_bInitialized)
         return true;
 
-    void * pHandler = Load7ZLibrary(L"7z");
+    void * pHandler = Load7ZLibrary(dll);
 
     if (pHandler == NULL)
         return false;
